@@ -1,0 +1,20 @@
+#!/bin/bash
+# get date and time
+sh curlsono
+	current="$(tail -n 1 sono-current)"
+
+sqlite3 dump_sono.db <<EOF
+	create table if not exists sono_data (date int, cash int);
+	insert into sono_data (date, cash) values(strftime('%s','now'),('$current'));
+EOF
+# curl sono-motors for crowedfunding value
+#sh curlsono
+#value="$(tail -n 1 sono-current)"
+
+#sqlite3 dump_sono.db <<EOF
+#insert into sono_data (cash) values($);
+#EOF
+# spit it out
+#select datetime(d1,'unixepoch')from sono_data;
+
+

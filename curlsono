@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -sL https://sonomotors.com|xargs|grep -Po "<div class=value-container>\K(.*?)</div>" | sed "s/..tr.//g"|awk '{gsub(/[^0-9. ]/,"")}1'|awk '{print $2}'>>sono-current
