@@ -25,11 +25,11 @@ Since the script is not automated yet, use screen to run to run it as background
 ```
 screen -S sono
 watch -n 10 'sh sono-get'
-CTRL -c CTRL d
+ctrl-A d
 ```
 To reattach the screensession type:
 ```
-screen -r 
+screen -r sono
 ```
 
 # General
