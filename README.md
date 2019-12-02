@@ -17,13 +17,21 @@ can be achived in time.
 # Quick start
 Download the files into a folder e.g. sono:
 
-``` git clone https://github.com/bytedicer/sono_01.git
+```
+git clone https://github.com/bytedicer/sono_01.git
 cd sono_01
 ```
 Since the script is not automated yet, use screen to run to run it as background process:
-``` screen -S sono
-watch -n 10 sono-get
 ```
+screen -S sono
+watch -n 10 'sh sono-get'
+CTRL -c CTRL d
+```
+To reattach the screensession type:
+```
+screen -r 
+```
+
 # General
 This is tested on a Ubuntu 19.10 System
 
