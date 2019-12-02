@@ -17,7 +17,7 @@ can be achived in time.
 # Quick start
 Download the files into a folder e.g. sono
 
-
+``` mkdir sono```
 
 
 # General
