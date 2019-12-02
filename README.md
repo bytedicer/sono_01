@@ -11,7 +11,8 @@ can be achived in time.
 
 # Features
 * crawler called curlsono which uses curl to read the value shown Sono-Motors with the help of grep, sed and awk
-
+* script which initiates the crawler function and dumps date, time and cash value into the sqlite3 database
+* dump_sono.db sqlite3 database for date, time and funding amount 
 
 # General
 This is tested on a Ubuntu 19.10 System
