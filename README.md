@@ -14,6 +14,12 @@ can be achived in time.
 * script which initiates the crawler function and dumps date, time and cash value into the sqlite3 database
 * dump_sono.db sqlite3 database for date, time and funding amount 
 
+# Quick start
+Download the files into a folder e.g. sono
+
+
+
+
 # General
 This is tested on a Ubuntu 19.10 System
 
