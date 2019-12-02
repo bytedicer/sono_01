@@ -15,11 +15,15 @@ can be achived in time.
 * dump_sono.db sqlite3 database for date, time and funding amount 
 
 # Quick start
-Download the files into a folder e.g. sono
+Download the files into a folder e.g. sono:
 
-``` mkdir sono```
-
-
+``` git clone https://github.com/bytedicer/sono_01.git
+cd sono_01
+```
+Since the script is not automated yet, use screen to run to run it as background process:
+``` screen -S sono
+watch -n 10 sono-get
+```
 # General
 This is tested on a Ubuntu 19.10 System
 
